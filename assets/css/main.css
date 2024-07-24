@@ -1,0 +1,44 @@
+body {
+  padding: 30px 15px;
+}
+
+.sidebar {
+  width: 300px;
+}
+
+.sidebar .sidebar-header,
+.sidebar .sidebar-description,
+.sidebar .sidebar-menu,
+.sidebar .sidebar-social {
+  margin-bottom: 30px;
+}
+
+.post {
+  width: 500px;
+  margin-bottom: 15px;
+}
+
+.post .post-header {
+  text-align: left;
+}
+
+.post .post-image {
+  max-height: 680px;
+  overflow: hidden;
+  position: relative;
+}
+
+.post .post-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post .post-content {
+  text-align: left;
+}
+
+.post .post-footer {
+  display: flex;
+  justify-content: space-between;
+}
