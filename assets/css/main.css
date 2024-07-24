@@ -1,44 +1,40 @@
 body {
-  padding: 30px 15px;
+    background-color: #121212;
+    color: #ffffff;
 }
 
 .sidebar {
-  width: 300px;
+    width: 300px;
+    height: 100vh;
 }
 
-.sidebar .sidebar-header,
-.sidebar .sidebar-description,
-.sidebar .sidebar-menu,
-.sidebar .sidebar-social {
-  margin-bottom: 30px;
+.content {
+    margin-left: 330px;
 }
 
 .post {
-  width: 500px;
-  margin-bottom: 15px;
+    width: 500px;
+    margin: 0 auto;
 }
 
-.post .post-header {
-  text-align: left;
+.post-image img {
+    max-height: 680px;
+    object-fit: cover;
+    width: 100%;
 }
 
-.post .post-image {
-  max-height: 680px;
-  overflow: hidden;
-  position: relative;
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.post .post-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.post .post-content {
-  text-align: left;
-}
-
-.post .post-footer {
-  display: flex;
-  justify-content: space-between;
+.menu-content {
+    max-width: 400px;
+    width: 100%;
 }
