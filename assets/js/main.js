@@ -1,10 +1,17 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const buttons = document.querySelectorAll('.sidebar-menu button');
-
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      button.classList.add('animate__bounceIn');
-      setTimeout(() => button.classList.remove('animate__bounceIn'), 1000);
+$(document).ready(function() {
+    $('.menu-button').on('click', function() {
+        $('.menu-overlay').toggleClass('d-none');
     });
-  });
+
+    $('.menu-overlay').on('click', function() {
+        $(this).toggleClass('d-none');
+    });
+
+    $('.btn').on('mousedown', function() {
+        $(this).addClass('animate__bounceIn');
+    });
+
+    $('.btn').on('mouseup', function() {
+        $(this).removeClass('animate__bounceIn');
+    });
 });
